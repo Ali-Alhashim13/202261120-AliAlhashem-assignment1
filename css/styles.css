@@ -1,0 +1,106 @@
+/* Container for the projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on small screens */
+    gap: 2rem;       /* Adds spacing between the cards */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Base Card Styling */
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 100%;  /* Default: Take up 100% width on mobile */
+    max-width: 450px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* Responsive Logic for Desktop (screens wider than 768px) */
+@media (min-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(50% - 2rem); /* Take up roughly half width minus the gap */
+    }
+}
+
+/* Center the form section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light contrast background */
+}
+
+.modern-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px; /* Prevents form from getting too wide */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Styling inputs and textarea */
+.modern-form input, 
+.modern-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Modern focus effect */
+.modern-form input:focus, 
+.modern-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
