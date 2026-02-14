@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p class="tagline">A passionate developer building digital experiences.</p>
+            <p>I am a student currently learning the fundamentals of web development. I enjoy solving problems and creating responsive, user-friendly applications.</p>
+            </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project One Thumbnail">
+                    <h3>Project Title One</h3>
+                    <p>Short description of what this project does and the tech used.</p>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Two Thumbnail">
+                    <h3>Project Title Two</h3>
+                    <p>Short description of what this project does and the tech used.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Ali Alhashem]. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
