@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
+    <title>Ali Alhashem | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">MyPortfolio</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,50 +22,64 @@
 
     <main>
         <section id="about">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p class="tagline">A passionate developer building digital experiences.</p>
-            <p>I am a student currently learning the fundamentals of web development. I enjoy solving problems and creating responsive, user-friendly applications.</p>
-            </section>
+            <h1>Hi, I'm Ali Alhashem</h1>
+            <p class="tagline">A CS student at KFUPM building digital experiences.</p>
+            <p>  I am currently learning the fundamentals of web development.
+                I enjoy solving problems and creating responsive, user-friendly applications.
+                I am particularly interested in Artificial Intelligence and how it can be integrated into modern software solutions.</p>
+        </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
                 <article class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project One Thumbnail">
-                    <h3>Project Title One</h3>
-                    <p>Short description of what this project does and the tech used.</p>
+                    <div class="image-placeholder">
+                        <img src="assets/images/PROJ1.jpg" alt="CPU Project">
+                    </div>
+                    <div class="card-content">
+                        <h3>pipelined CPU</h3>
+                        <p>A project that I implemented using LOGISIM in term 251 COE301 course which was starting by building single sycle CPU then add the pipe regiters to make it a pipelined CPU.</p>
+                        <a href="#" class="btn-secondary">View Project</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Two Thumbnail">
-                    <h3>Project Title Two</h3>
-                    <p>Short description of what this project does and the tech used.</p>
+                    <div class="image-placeholder">
+                        <img src="assets/images/PROJ2.jpg" alt="AI phone classification Project">
+                    </div>
+                    <div class="card-content">
+                        <h3>AI Phone Classification</h3>
+                        <p>A project that I implemented using Python and machine learning techniques in term 251 COE292 course to classify phones depending on their features such as RAM, storage capacity, battery size, and price range.</p>
+                        <a href="#" class="btn-secondary">View Project</a>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Get In Touch</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="modern-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 [Ali Alhashem]. All rights reserved.</p>
+        <p>&copy; 2026 Ali Alhashem. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
